@@ -5,7 +5,7 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 12:30:55 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 22:29:40 2016 Marlon Petit
+** Last update Thu Jan 14 22:31:11 2016 Marlon Petit
 */
 
 #include "Character.hh"
@@ -33,7 +33,7 @@ void	Mage::RestorePower()
 {
   this->_power += (50 + this->_intelligence);
   if (this->_power > 100)
-    this->_power = 100);
+    this->_power = 100;
   std::cout << getName() << " takes a mana potion" << std::endl;
 }
 

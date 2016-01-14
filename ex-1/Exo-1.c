@@ -5,7 +5,7 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 11:32:54 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 12:27:54 2016 Marlon Petit
+** Last update Thu Jan 14 15:37:01 2016 Marlon Petit
 */
 
 #include "Exo-1.h"
@@ -44,7 +44,7 @@ void	Attack(t_cthulhu *this)
       printf("%s attacks and destroys the city\n", this->m_name);
     }
   else
-    printf("%s can’t attack, he doesn’t have enough power\n", this->m_name);
+    printf("%s can't attack, he doesn't have enough power\n", this->m_name);
 }
 
 void	Sleeping(t_cthulhu *this)

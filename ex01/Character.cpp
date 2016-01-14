@@ -5,14 +5,13 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 12:30:55 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 15:29:49 2016 Marlon Petit
+** Last update Thu Jan 14 17:07:10 2016 Marlon Petit
 */
 
 #include "Character.hh"
 
 Character::Character(const std::string &name, int level):_name(name), _level(level)
 {
-  this->_level = level;
   this->_pv = 100;
   this->_power = 100;
   this->_strength = 5;
@@ -93,4 +92,6 @@ void	Character::TakeDamage(int _damage)
     std::cout << getName() << " takes " << _damage << " damage" << std::endl;
   else
     std::cout << getName() << " out of combat" << std::endl;
+  if (getPv() < 0)
+    this->_pv = 0;
 }

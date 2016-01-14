@@ -5,7 +5,7 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 12:31:02 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 16:35:31 2016 Marlon Petit
+** Last update Thu Jan 14 17:43:35 2016 Marlon Petit
 */
 
 #ifndef CHARACTER_HH_
@@ -23,11 +23,11 @@ public:
   int			getLvl() const;
   int			getPv() const;
   int			getPower() const;
-  int			CloseAttack();
-  int			RangeAttack();
   void			Heal();
   void		        RestorePower();
   void			TakeDamage(int _damage);
+  int                   CloseAttack();
+  int                   RangeAttack();
   enum			AttackRange{CLOSE, RANGE};
   AttackRange		Range;
 protected:

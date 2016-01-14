@@ -5,7 +5,7 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 12:31:02 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 16:47:03 2016 Marlon Petit
+** Last update Thu Jan 14 17:48:16 2016 Marlon Petit
 */
 
 #ifndef WARRIOR_HH_
@@ -22,17 +22,8 @@ public:
   ~Warrior();
   int			CloseAttack();
   int			RangeAttack();
-private:
-  const std::string	_name;
-  int			_level;
-  int			_pv;
-  int			_power;
-  int			_strength;
-  int			_stamina;
+protected:
   std::string		weaponName;
-  int			_intelligence;
-  int			_spirit;
-  int			_agility;
 };
 
 #endif /* !WARRIOR_HH_ */

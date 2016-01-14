@@ -5,7 +5,7 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 12:30:55 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 16:39:16 2016 Marlon Petit
+** Last update Thu Jan 14 16:54:29 2016 Marlon Petit
 */
 
 #include "Character.hh"
@@ -93,4 +93,6 @@ void	Character::TakeDamage(int _damage)
     std::cout << getName() << " takes " << _damage << " damage" << std::endl;
   else
     std::cout << getName() << " out of combat" << std::endl;
+  if (getPv() < 0)
+    this->_pv = 0;
 }

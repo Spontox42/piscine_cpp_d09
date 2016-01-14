@@ -5,7 +5,7 @@
 ** Login   < petit_x@epitech.net >
 ** 
 ** Started on  Thu Jan 14 12:31:02 2016 petit_x - Marlon Petit
-** Last update Thu Jan 14 16:44:09 2016 Marlon Petit
+** Last update Thu Jan 14 16:35:31 2016 Marlon Petit
 */
 
 #ifndef CHARACTER_HH_
@@ -30,7 +30,7 @@ public:
   void			TakeDamage(int _damage);
   enum			AttackRange{CLOSE, RANGE};
   AttackRange		Range;
-private:
+protected:
   const std::string	_name;
   int			_level;
   int			_pv;
